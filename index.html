@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js"></script>
+    <title>Legacy Hotel </title>
+</head>
+<body>
+    <nav class="navbar background">
+        <div class="nav-list ">
+            <div class="logo"><img src="img/hotellogo.png" alt="logo"></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li class="navbar-item dropdown ">
+                <a href="#" class="dropdown-toggle">Pages</a>
+                <ul class="dropdown-menu underline">
+                    <li><a href="#">Our Rooms</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </li>
+            <li><a href="/">Contact us</a></li>
+            <div class="spacer"></div>
+            <button class="btn-sm"><i class="fas fa-sign-in-alt"></i>login</button>
+            <p class="phonenumber">+92 30987896</p>
+        </div>
+    </nav>
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">We continue our luxery</p>
+                <p class="text-small">Experience the epitome of luxury and comfort at our hotel, where elegance meets exceptional service. Nestled in the heart of the city our hotel provides you; </p>
+                <span class="no-cursor" id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch video</button>
+                </div>
+                
+            </div>
+            <div class="secondHalf">
+                <img src="img/logo.png" alt="photo ">
+            </div>
+           
+        </div>
+         <div class="scrollbutton">
+                <p class="scroll-btn"  onclick="scrollToData(['details'])" id="scrollToServices" >Details</p>
+                <p class="scroll-btn"  onclick="scrollToData(['services'])"id="scrollToServices" >Services</p>
+                <p class="scroll-btn"  onclick="scrollToData(['gallery'])" id="scrollToGallery" >Gallery</p>
+            </div>
+    </section>
+    <section class="section" id="details">
+        <div class="paras">
+           <p class="sectionTag text-big">Great choice for a relaxing vacation for families with children or a group of friends.</p>
+            <p class="sectionSubTag text-small">Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean vinegar stumptown yr pop-up artisan.</p>
+            <p class="sectionSubTag text-small">See-through delicate embroidered organza blue lining luxury acetate-mix stretch pleat detailing. Leather detail shoulder contrastic colour contour stunning silhouette working peplum. Statement buttons cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket. Effortless comfortable full leather lining eye-catching unique detail to the toe low sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design slingback strap mid kitten heel this ladylike design.</p>
+        </div>
+        <div class="separator"></div>
+       <div class="booknow ">
+        <h1>$249</h1>
+        <button class="btn-book">Book Now</button>
+        <div class="info">
+            <div class="bed">
+                <img src="/img/bed.png" alt="Bed">
+        <p>King Bed</p>
+    </div>
+    <div class="room-space">
+        <img src="/img/family.png" alt=" family">
+    <p> 2 Persons</p>
+</div>
+<div class="Area">
+    <img src="/img/wide.png" alt="area">
+    <p class="area">Area</p>
+</div>
+<div class="sunset">
+    <img src="/img/sea.png" alt="sunset">
+        <p> Sun View </p>
+    </div>
+</div>
+        
+    </section>
+    <section class="section2 " id="services">
+        <div class="amenities">
+        <p class=" text-big">Amenities</p>
+        <div class="SubTag text-small">
+            <ul><li>40-inch Samsung® LED TV</li>
+            <li>Electronic safe with charging facility</li>
+        <li>ron and ironing board</li>
+    <li>USB charging station</li>
+    <li>Mini bar</li>
+    <li>Non-smoking</li>
+    <li> USB charging station</li>
+    <li>Wired and wireless broadband Internet access</li>
+    <li>Work desk</li>
+</ul>
+</div>
+</div>
+<div class="services">
+    <p class=" text-big">Services</p>
+    <div class="SubTag text-small">
+        <ul><li>40-inch Samsung® LED TV</li>
+        <li>Electronic safe with charging facility</li>
+    <li>ron and ironing board</li>
+<li>USB charging station</li>
+<li>USB charging station</li>
+<li>Mini bar</li>
+<li>Non-smoking</li>
+<li> USB charging station</li>
+<li>Wired and wireless broadband Internet access</li>
+<li>Work desk</li>
+</ul></div>
+</div>
+</section>
+<section class="section " id="gallery">
+    <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus repellat ducimus ipsa doloremque cupiditate provident numquam? At consequatur numquam, sequi commodi corrupti error inventore temporibus quis minima eveniet aliquam.</p>
+    <div class="slider">
+        <div class="slides">
+            <img src="img/bghotel.jpg" alt="Image 1">
+            <img src="img/bed1.jpg" alt="Image 1">
+            <img src="img/bed2.jpg" alt="Image 1">
+            <img src="img/bed4.webp" alt="Image 1">
+            <img src="img/bed 5.webp" alt="Image 1">
+            
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    </section>
+
+    <div class="intrest">
+        <h1>Other Rooms</h1>
+        <p>COULD ALSO BE YOUR INTEREST</p>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/room5.jpg" alt="Image 1">
+        </div>
+        <div class="card">
+            <img src="img/room5.jpg" alt="Image 2">
+        </div>
+        <div class="card">
+            <img src="img/room5.jpg" alt="Image 3">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Our Address</h2>
+                <p>Hoteller Luxury Hotel <br>
+                    Via Serlas 546
+                    6700 St. Moritz
+                    Switzerland</p>
+            </div>
+            <div class="footer-section">
+                <h2>RESERVATION</h2>
+                <ul>
+                    <li>Tel.: +41 (0)54 2344 00</li>
+                    <li>Fax: +41 (0)542344 99</li>
+                    <li>Fax: +41 (0)542344 99</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>NEWSLETTER</h2>
+                <input type="text" placeholder="Your Email">
+                <button class="btn-book"> Subscribe</button>
+                
+            </div>
+           
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Comfort', 'Fresh envirnoment' , 'Relaxing rooms'],
+      typeSpeed: 50,
+      backSpeed: 25,
+        loop: true,
+        showCursor: false 
+    });
+  </script>
+</body>
+</html>
